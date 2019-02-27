@@ -258,7 +258,7 @@ def human_cochleagram(signal, sr, n=None, low_lim=50, hi_lim=20000,
   """
   if n is None:
     n = int(np.floor(erb.freq2erb(hi_lim) - erb.freq2erb(low_lim)) - 1)
-  print("here")
+  # print("here")
   out = cochleagram(signal, sr, n, low_lim, hi_lim, sample_factor, padding_size,
       downsample, nonlinearity, fft_mode, ret_mode, strict, **kwargs)
 
